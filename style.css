@@ -1,1 +1,16 @@
+function generateAI() {
+  const prompt = document.getElementById("prompt").value;
+  const result = document.getElementById("result");
 
+  if (!prompt) {
+    result.innerHTML = "⚠️ Masukkan prompt dulu";
+    return;
+  }
+
+  // Simulasi AI (nanti bisa diganti API OpenAI)
+  result.innerHTML = `
+    <strong>Hasil AI:</strong><br>
+    Prompt kamu: "${prompt}"<br><br>
+    Ini adalah contoh hasil AI.
+  `;
+}
